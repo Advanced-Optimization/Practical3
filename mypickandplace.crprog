@@ -1,0 +1,7 @@
+<?xml version='1.0'?>
+<!DOCTYPE program>
+<program>
+    <track>
+        <action name="startmove" wp="0.000000 -150.000000 0.000000 0.000000 -0.000000 -0.000000 -0.000000 " duration="0.5" freeInRotation="true" comment="Start waypoint"/>
+    </track>
+</program>
