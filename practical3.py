@@ -53,15 +53,13 @@ def _default_task_tuning():
     # ============= Exercise 1: Fill in below =================
     # Starting from fail_params, tune the parameters until your
     # project works in simulation
-    success_params = {
-    }
+    success_params = {}
     # =========================================================
 
     # ============= Exercise 2: Fill in below =================
     # Starting from success_params, make any required adjustments
     # until your code runs successfully on the real robot.
-    real_params = {
-    }
+    real_params = {}
     # =========================================================
 
     fail_params = {
@@ -77,6 +75,11 @@ def _default_task_tuning():
         "place_height_offset": 11.0,
         "lift_success_delta": 30.0,
     }
+    # Select the most specific non-empty parameter set.
+    if real_params:
+        return real_params
+    if success_params:
+        return success_params
     return fail_params
 
 
@@ -354,7 +357,7 @@ class AutoPickAndPlaceDemo(Sofa.Core.Controller):
         except (TypeError, AttributeError, IndexError) as e:
             # Silent fail - gripper_opening may be in an inconsistent state
             print(
-                f"[P3][Demo] WARNING: faild to set gripper: {e} "
+                f"[P3][Demo] WARNING: failed to set gripper: {e} "
                 f"(type={type(opening_data).__name__})"
             )
 

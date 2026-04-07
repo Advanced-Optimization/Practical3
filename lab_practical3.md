@@ -69,7 +69,7 @@ In your report, include a discussion of the following:
 
 :::: collapse Optimization
 
-Finally we ask you reflect about how you could improve the above process using a global optimization framework. 
+Finally, we ask you to reflect on how you could improve the above process using a global optimization framework. 
 
 The simulator includes a scoring function, where the score is based on three metrics:
 
@@ -82,7 +82,7 @@ In the following, you can assume that the same metrics can be evaluated on the r
 ::: exercise
 **Exercise 3: optimization reflection**
 
-In your report, Write a short reflection (5-8 sentences):
+In your report, write a short reflection (5-8 sentences):
 
 1. How you would formulate this tuning task as a global optimization problem.
 2. Which variables you would optimize and what objective(s) you would use.
@@ -99,7 +99,7 @@ If you are feeling adventurous, you can implement a little global optimization p
 To gain full points, we ask you to discuss the following in your report: 
 1. Include a screenshot and a link to the codebase of your working code. (5pt) 
 2. Provide a convergence plot, and (3pt) 
-3. Show screenshots of the working pick and place task after finding your (2pt)
+3. Show screenshots of the working pick and place task after finding your optimized parameters. (2pt)
 4. Discuss the performance and its limitations (5pt) 
 :::
 
